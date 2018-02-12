@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -86,10 +86,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 711, y: 492}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 11
+  controlID: 88
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1130
     height: 731
-  m_MinSize: {x: 434, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 436, y: 492}
+  m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,8 +177,8 @@ MonoBehaviour:
     y: 0
     width: 1130
     height: 460
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 460
     width: 1130
     height: 271
-  m_MinSize: {x: 434, y: 271}
-  m_MaxSize: {x: 14004, y: 10021}
+  m_MinSize: {x: 436, y: 271}
+  m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 50
+  controlID: 26
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 0
     width: 459
     height: 271
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -399,13 +399,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: E:\Proyectos\Plataformas\Proyecto Oficial\proyecto-videojuego-movil-android-jorge-y-marlon\VintageRunner
+  m_LastProjectPath: E:\Proyectos\Plataformas\Este\proyecto-videojuego-movil-android-jorge-y-marlon
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a290000
-    m_LastClickedID: 10586
-    m_ExpandedIDs: bc28000000ca9a3bffffff7f
+    m_SelectedIDs: 0c290000
+    m_LastClickedID: 10508
+    m_ExpandedIDs: 00000000d628000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -433,7 +433,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d6280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000070270000bc290000000000002c2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -673,7 +673,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: a67ff0ff0a80f0ff1881f0ff1c81f0ff2281f0ff2681f0ff32d7f0ffd4e9f0ff4eebf0ff5eecf0ff16f1f0ff7af1f0ff88f2f0ff8cf2f0ff90f2f0ff96f2f0ff8422f1ff387df1ffa07df1ffae7ef1ffb27ef1ffb67ef1ffbc7ef1ff7e92f1ffe692f1fff493f1fff893f1fffc93f1ff0294f1ff04d1f1ff6cd1f1ff7ad2f1ff7ed2f1ff82d2f1ff88d2f1ff38faf1fff2fef1ffca26f2ff5291f2ffa83df3ffbc00f4ff0606f4ff0007f4ff5c1af4ff922ef4ff6031f4ff6a32f4ff9a36f4ff963df4ff1e7af4ffe2a4f4ff48a5f4ff56a6f4ff60a6f4ff2090f5ff5492f5ffba92f5ffc893f5ffcc93f5ff9c05f7fff807f7ff5e08f7ff6c09f7ff7609f7ff022ff7ffee31f7ff5432f7ff6233f7ff6633f7ff8c7cf7fff27cf7ff007ef7ff047ef7ff8c82f7ff22a8f7ff98b0f7fffcb0f7ff0eb2f7ff16b2f7ffc8b2f7ffe0b3f7ff94b9f7ff1abaf7ff28bbf7ff32bbf7ff960ff9ffe029f9ffb22af9fff034f9ff6cb9f9ff50c7f9ff4218faff2461fbffc665fbff7666fbff9667fbffcef9ffff00000000342e0000482e0000fe2e00001836000092360000a63600000a380000143800001e380000543a0000283c0000323c00003c3c0000463c0000543c00005c3e0000b2430000bc460000e0470000f447000060480000804800000c4b00002c4b0000e24d0000024e0000b8500000d8500000c2540000d6540000
+    m_ExpandedIDs: 3eefffffa4f6ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,7 +692,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ExpandedScenes:
-  - MainMenu
+  - CupheadGame
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
