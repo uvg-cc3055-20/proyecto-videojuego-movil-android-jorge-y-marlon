@@ -18,4 +18,8 @@ public class PauseMenuOptions : MonoBehaviour {
     {
         Application.Quit();
     }
+    public void CharacterSelect()
+    {
+        SceneManager.LoadScene("CharacterSelect");
+    }
 }

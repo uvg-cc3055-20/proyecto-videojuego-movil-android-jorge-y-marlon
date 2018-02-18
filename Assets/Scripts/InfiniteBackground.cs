@@ -11,12 +11,14 @@ public class InfiniteBackground : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(GameController.instance.gameOver == false){ 
         if (PauseMenu.instance.GameState == false) { 
         transform.Translate(new Vector3(1, 0, 0) * -scrollingSpeed * Time.deltaTime);
-        if (transform.position.x < -6f)
+        if (transform.position.x < -3f)
         {
-            transform.position = new Vector3(6f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(1f, transform.position.y, transform.position.z);
         }
+    }
     }
     }
 }
