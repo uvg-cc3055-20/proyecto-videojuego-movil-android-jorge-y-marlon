@@ -13,9 +13,9 @@ public class InfiniteBackground : MonoBehaviour {
 	void Update () {
         if (PauseMenu.instance.GameState == false) { 
         transform.Translate(new Vector3(1, 0, 0) * -scrollingSpeed * Time.deltaTime);
-        if (transform.position.x < -7f)
+        if (transform.position.x < -6f)
         {
-            transform.position = new Vector3(7f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(6f, transform.position.y, transform.position.z);
         }
     }
     }

@@ -7,6 +7,7 @@ public class Character : MonoBehaviour {
 
     Rigidbody2D rb;
     float speed = 10f;
+    float forcePush = 500f;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -20,6 +21,12 @@ public class Character : MonoBehaviour {
             float movX = Input.acceleration.x;
             rb.transform.Translate(Vector2.right * speed * movX * Time.deltaTime);
             anim.SetFloat("Speed", Mathf.Abs(movX));
+            if (Input.GetMouseButtonDown(0))
+            {
+                 
+                rb.AddForce(Vector2.up * forcePush);
+                anim.SetFloat("Height", rb.transform.position.y);
+            }
         }
         
     }
