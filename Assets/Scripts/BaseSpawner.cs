@@ -28,8 +28,8 @@ public class BaseSpawner : MonoBehaviour {
             GameObject randomPrefabRight;
             randomPrefabRight = prefabsRight[Random.Range(0, prefabsRight.Count)];
             //float random = Random.Range(-8f, 8f);
-            Instantiate(randomPrefabRight,  new Vector3(-7f, -4f, 0), Quaternion.identity);
-            Instantiate(randomPrefab, new Vector3(8.66f, -4f, 0), Quaternion.identity);
+            Instantiate(randomPrefabRight,  new Vector3(-8.86f, -3.17f, 0), Quaternion.identity);
+            Instantiate(randomPrefab, new Vector3(8.86f, -3.17f, 0), Quaternion.identity);
             elapsedTime = 0;
         }
 	}
