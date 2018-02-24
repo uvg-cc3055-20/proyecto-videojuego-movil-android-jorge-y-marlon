@@ -5,9 +5,11 @@ using UnityEngine;
 public class BaseSpawner : MonoBehaviour {
 
     public List<GameObject> prefabs;
-    public List<GameObject> prefabsRight;
+    
     float spawnTime = 4f;
+    
     float elapsedTime = 0f;
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -25,11 +27,8 @@ public class BaseSpawner : MonoBehaviour {
             
             GameObject randomPrefab;
             randomPrefab = prefabs[Random.Range(0,prefabs.Count)];
-            GameObject randomPrefabRight;
-            randomPrefabRight = prefabsRight[Random.Range(0, prefabsRight.Count)];
-            //float random = Random.Range(-8f, 8f);
-            Instantiate(randomPrefabRight,  new Vector3(-8.86f, -3.17f, 0), Quaternion.identity);
             Instantiate(randomPrefab, new Vector3(8.86f, -3.17f, 0), Quaternion.identity);
+                
             elapsedTime = 0;
         }
 	}

@@ -5,7 +5,7 @@ Assets/Scenes/CharacterSelect.unity
 Assets/Scenes/AngelGame.unity
 Assets/Scenes/CupheadGame.unity
 SceneListEnd?
-cfb0c512722aa12998a0c8576cc810a5 Assembly-CSharp.dll:.BaseSpawner
+66cbad2229e1792f90f39aab51aab9e8 Assembly-CSharp.dll:.BaseSpawner
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -154,3 +154,4 @@ e7e6be587cf6db3317c54d79c66c8327 Assembly-CSharp.dll:.GameOver
 23de005623e3bd19e37e8dba9fcc017d Assembly-CSharp.dll:.GameController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AudioManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CharacterSelect
+f68c85d32d05d500c78e12d72ab18e3e Assembly-CSharp.dll:.SpawnerRight

@@ -309,6 +309,7 @@
     <Compile Include="Assets\Scripts\MoveRightObstacle.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PauseMenuOptions.cs" />
+    <Compile Include="Assets\Scripts\SpawnerRight.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

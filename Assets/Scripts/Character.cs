@@ -7,30 +7,28 @@ public class Character : MonoBehaviour {
 
     Rigidbody2D rb;
     float speed = 40f;
-    float forcePush = 500f;
+    float forcePush = 650f;
+    private bool facingRight;
     
     // Use this for initialization
     void Start () {
+        facingRight = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 	
 	// Update is called once per frame
 	void Update () {
+
         if(GameController.instance.gameOver == false) { 
         if (PauseMenu.instance.GameState == false)
         {
+                float horizontal = Input.GetAxis("Horizontal");
+                movingX();
+                flip(horizontal);
+                jumping();
             
-            float movX = Input.acceleration.x;
-            rb.transform.Translate(Vector2.right * speed * movX * Time.deltaTime);
-            anim.SetFloat("Speed", Mathf.Abs(movX));
-            anim.SetBool("Grounded", true);
-            if (Input.GetMouseButtonDown(0))
-            {
-                
-                rb.AddForce(Vector2.up * forcePush);
-                anim.SetBool("Grounded", false);
-            }
+          
         }
         
     }
@@ -45,5 +43,30 @@ public class Character : MonoBehaviour {
         }
 
 
+    }
+    private void movingX()
+    {
+        float movX = Input.acceleration.x;
+        rb.transform.Translate(Vector2.right * speed * movX * Time.deltaTime);
+        anim.SetFloat("Speed", Mathf.Abs(movX));
+    }
+    private void jumping()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            rb.AddForce(Vector2.up * forcePush);
+            anim.SetBool("Grounded", false);
+        }
+    }
+    private void flip(float horizontal)
+    {
+        if(horizontal>0 && !facingRight || horizontal < 0 && facingRight)
+        {
+            facingRight = !facingRight;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
     }
 }

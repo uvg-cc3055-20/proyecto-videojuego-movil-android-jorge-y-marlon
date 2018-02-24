@@ -8,9 +8,11 @@ public class CharacterSelect : MonoBehaviour {
     public void PlayCuphead()
     {
         SceneManager.LoadScene("CupheadGame");
+        AudioManager.myAudio.Stop();
     }
     public void PlayAngel()
     {
         SceneManager.LoadScene("AngelGame");
+        AudioManager.myAudio.Stop();
     }
 }

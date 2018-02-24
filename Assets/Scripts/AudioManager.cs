@@ -4,26 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
-    private AudioSource music;
+    public static AudioSource myAudio;
+
     void Start()
     {
-        music = GetComponent<AudioSource>();
+        myAudio = GetComponent<AudioSource>();  
     }
-    void Update()
+    void Awake()
     {
-        if (SceneManager.GetActiveScene().Equals("CupheadGame"))
-        {
-            Destroy(music);
-        }
-        if (SceneManager.GetActiveScene().Equals("AngelGame"))
-        {
-            Destroy(music);
-        }
-        else
-        {
-            DontDestroyOnLoad(music);
-        }
-        
-
+        DontDestroyOnLoad(transform.gameObject);
     }
 }
