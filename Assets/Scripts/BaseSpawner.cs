@@ -17,8 +17,9 @@ public class BaseSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (GameController.instance.gameOver == false) { 
-            if (elapsedTime < spawnTime)
+        if (GameController.instance.gameOver == false) {
+            if (PauseMenu.instance.GameState == false) { 
+                if (elapsedTime < spawnTime)
         {
             elapsedTime += Time.deltaTime;
         }
@@ -33,4 +34,5 @@ public class BaseSpawner : MonoBehaviour {
         }
 	}
     }
+}
 }

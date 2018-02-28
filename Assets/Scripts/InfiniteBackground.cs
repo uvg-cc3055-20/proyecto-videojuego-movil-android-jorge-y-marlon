@@ -14,7 +14,7 @@ public class InfiniteBackground : MonoBehaviour {
         if(GameController.instance.gameOver == false){ 
         if (PauseMenu.instance.GameState == false) { 
         transform.Translate(new Vector3(1, 0, 0) * -scrollingSpeed * Time.deltaTime);
-        if (transform.position.x < -13f)
+        if (transform.position.x < -12f)
         {
             transform.position = new Vector3(1f, transform.position.y, transform.position.z);
         }

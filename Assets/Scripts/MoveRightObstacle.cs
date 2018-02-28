@@ -12,12 +12,14 @@ public class MoveRightObstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(GameController.instance.gameOver == false) { 
-        rb.transform.Translate(Vector2.right * speed * Time.deltaTime);
+        if(GameController.instance.gameOver == false) {
+            if (PauseMenu.instance.GameState == false) { 
+                rb.transform.Translate(Vector2.right * speed * Time.deltaTime);
         if (rb.transform.position.x > 7f)
         {
             Destroy(gameObject);
         }
     }
         }
+}
 }

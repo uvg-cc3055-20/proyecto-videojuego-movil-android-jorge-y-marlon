@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AngelGame.unity
+- path: Assets/Scenes/CupheadGame.unity
   isLoaded: 1
   isActive: 1

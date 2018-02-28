@@ -17,7 +17,8 @@ public class SpawnerRight : MonoBehaviour {
     {
         if (GameController.instance.gameOver == false)
         {
-            if (elapseTimeRight < spawnTimeRight)
+            if (PauseMenu.instance.GameState == false) { 
+                if (elapseTimeRight < spawnTimeRight)
             {
                 elapseTimeRight += Time.deltaTime;
                 
@@ -39,4 +40,5 @@ public class SpawnerRight : MonoBehaviour {
             }
         }
     }
+}
 }

@@ -9,7 +9,8 @@ public class Character : MonoBehaviour {
     float speed = 40f;
     float forcePush = 650f;
     private bool facingRight;
-    
+    public GameObject feet;
+    public LayerMask layerMask;
     // Use this for initialization
     void Start () {
         facingRight = true;
@@ -54,9 +55,13 @@ public class Character : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-
-            rb.AddForce(Vector2.up * forcePush);
-            anim.SetBool("Grounded", false);
+            RaycastHit2D raycast = Physics2D.Raycast(feet.transform.position, Vector2.down, 0.1f, layerMask);
+            if (raycast.collider != null)
+            {
+                rb.AddForce(Vector2.up * forcePush);
+                anim.SetBool("Grounded", false);
+            }
+            
         }
     }
     private void flip(float horizontal)

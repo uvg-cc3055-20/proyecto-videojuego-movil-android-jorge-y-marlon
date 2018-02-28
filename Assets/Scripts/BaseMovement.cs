@@ -14,11 +14,13 @@ public class BaseMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (GameController.instance.gameOver == false) {
-            rb.transform.Translate(Vector2.left * speed * Time.deltaTime);
+            if (PauseMenu.instance.GameState == false) { 
+                rb.transform.Translate(Vector2.left * speed * Time.deltaTime);
             if (rb.transform.position.x <-8f)
              {
                  Destroy(gameObject);
              }
 	}
     }
+}
 }
