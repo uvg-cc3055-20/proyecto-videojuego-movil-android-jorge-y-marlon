@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase donde se encunetra el control y opciones de menu de pausa
+ */
+
 public class PauseMenuOptions : MonoBehaviour {
     public void Resume()
     {
@@ -10,6 +16,7 @@ public class PauseMenuOptions : MonoBehaviour {
         PauseMenu.instance.button.SetActive(true);
 
     }
+	//despliega las opciones en el menu de pausa
     public void Menu()
     {
         SceneManager.LoadScene("MainMenu");

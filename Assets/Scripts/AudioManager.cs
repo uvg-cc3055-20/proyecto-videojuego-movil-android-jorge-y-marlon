@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase donde se encunetra el control del audio
+ */
 
 public class AudioManager : MonoBehaviour {
     public static AudioSource myAudio;

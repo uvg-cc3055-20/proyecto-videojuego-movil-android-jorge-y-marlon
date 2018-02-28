@@ -1,6 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase donde se encunetra el control del obstaculo
+ */
 
 public class MoveRightObstacle : MonoBehaviour {
     Rigidbody2D rb;
@@ -12,6 +17,7 @@ public class MoveRightObstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//si el juego no se ha terminado y no esta en pausa sigue moviendo el obstaculo 
         if(GameController.instance.gameOver == false) {
             if (PauseMenu.instance.GameState == false) { 
                 rb.transform.Translate(Vector2.right * speed * Time.deltaTime);

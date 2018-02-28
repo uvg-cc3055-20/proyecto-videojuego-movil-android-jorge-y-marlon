@@ -4,13 +4,13 @@ using UnityEngine;
 /*
  * Universidad del Valle de Guatemala
  * Marlon Fuentes - Jorge Azmitia
- * Funcion: Clase donde se encunetra el control del movimiento de los enemigos. 
+ * Funcion: Clase donde se encunetra el control del movimiento de las monedas
  */
 
-public class BaseMovement : MonoBehaviour {
+public class OtherMovement : MonoBehaviour {
 
     Rigidbody2D rb;
-    float speed = 5f;
+    float speed = 7f;
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -18,7 +18,8 @@ public class BaseMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//si el juego no ha terminado y no esta en pausa, sigue el movimiento
+		
+		//si el juego no ha terminado y no esta en pausa mueve las monedas
         if (GameController.instance.gameOver == false) {
             if (PauseMenu.instance.GameState == false) { 
                 rb.transform.Translate(Vector2.left * speed * Time.deltaTime);
@@ -28,5 +29,10 @@ public class BaseMovement : MonoBehaviour {
              }
 	}
     }
+	
+	
 }
+
+
+
 }
